@@ -1,0 +1,16 @@
+This program will take two dates as input, and then calculate the amount of time between them.
+STEPS: -
+1. Taking the two dates as input from the user.
+2. Findout the amount of time between them.
+
+
+REQUIREMENTS: -
+1. basic setup.
+2. datetime and timedelta module.
+
+INTERFACE: -
+GUI BASED.
+TESTING: -
+CONSOLE BASED
+
+Git Record must be there.
