@@ -18,7 +18,7 @@
 #     print(True)
 #
 from datetime import date
-date_first_time = '22-11-222'.replace('-' or '.', '/')
+date_first_time = '22-11-1936'.replace('-' or '.', '/')
 date_list = [
     int(x) for x in date_first_time.split('/')
 ]
@@ -31,7 +31,7 @@ year = dates.year
 # print(type(year))
 date_final = date(date_list[2], date_list[1], date_list[0])
 print(date_final.year)
-if date_final.year > 1000:
+if 1000 < date_final.year < year:
     pass
 else:
     date_final = date_final.replace(year=year)

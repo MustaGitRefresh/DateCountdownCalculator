@@ -30,7 +30,11 @@ class User:
         date_from_user = date(date_list[2], date_list[1], date_list[0])
         date_today = date.today()
         year = date_today.year
-        date_from_user = date_from_user.replace(year=int(year))
+        if 1000 < date_from_user.year < year:
+            print("Number of days are as: ")
+        else:
+            print(f"The date given was incorrect so the default date will be {int(year)}")
+            date_from_user = date_from_user.replace(year=int(year))
         return date_from_user
 
 
