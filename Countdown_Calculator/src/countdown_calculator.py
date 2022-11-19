@@ -7,11 +7,11 @@ class DateDurationFinder:
     def __init__(self, date1, date2):
         self.date1, date2 = date1, date2
 
-        print(date1)
-        print(date2)
+        print("The Number of days are as follow:\n", end='')
+        print(date2 - date1)
 
 
-class User:
+class DateFromUser:
 
     def __init__(self):
         print("Enter the first date:")
@@ -30,12 +30,11 @@ class User:
         date_from_user = date(date_list[2], date_list[1], date_list[0])
         date_today = date.today()
         year = date_today.year
-        if 1000 < date_from_user.year < year:
-            print("Number of days are as: ")
+        if 1000 < date_from_user.year <= year:
+            print("The date given was correct 😀😀")
         else:
             print(f"The date given was incorrect so the default date will be {int(year)}")
             date_from_user = date_from_user.replace(year=int(year))
         return date_from_user
 
 
-user = User()

@@ -17,23 +17,42 @@
 # if b in a:
 #     print(True)
 #
-from datetime import date
-date_first_time = '22-11-1936'.replace('-' or '.', '/')
-date_list = [
-    int(x) for x in date_first_time.split('/')
-]
+# from datetime import date
+# date_first_time = '22-11-1936'.replace('-' or '.', '/')
+# date_list = [
+#     int(x) for x in date_first_time.split('/')
+# ]
 # print(date_list)
 # for i in date_list:
 #     print(type(i))
 #
-dates = date.today()
-year = dates.year
+# dates = date.today()
+# year = dates.year
 # print(type(year))
-date_final = date(date_list[2], date_list[1], date_list[0])
-print(date_final.year)
-if 1000 < date_final.year < year:
-    pass
-else:
-    date_final = date_final.replace(year=year)
-
-print(date_final)
+# date_final = date(date_list[2], date_list[1], date_list[0])
+# print(date_final.year)
+# if 1000 < date_final.year < year:
+#     pass
+# else:
+#     date_final = date_final.replace(year=year)
+#
+# print(date_final)
+# import datetime
+#
+# # datetime(year, month, day, hour, minute, second)
+# a = datetime.datetime(2017, 6, 21, 18, 25, 30)
+# b = datetime.datetime(2017, 5, 16, 8, 21, 10)
+#
+# # returns a timedelta object
+# c = a - b
+# print('Difference: ', c)
+#
+# # returns (minutes, seconds)
+# minutes = divmod(c.total_seconds(), 60)
+# print('Total difference in minutes: ', minutes[0], 'minutes',
+#       minutes[1], 'seconds')
+#
+# # returns the difference of the time of the day (minutes, seconds)
+# minutes = divmod(c.seconds, 60)
+# print('Total difference in minutes: ', minutes[0], 'minutes',
+#       minutes[1], 'seconds')
